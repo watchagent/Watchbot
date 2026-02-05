@@ -1,0 +1,53 @@
+{
+  "messages": {
+    "ackReactionScope": "group-mentions"
+  },
+  "agents": {
+    "defaults": {
+      "maxConcurrent": 4,
+      "subagents": {
+        "maxConcurrent": 8
+      },
+      "compaction": {
+        "mode": "safeguard"
+      },
+      "workspace": "/home/codespace/.openclaw/workspace",
+      "model": {
+        "primary": "openai/codex-mini-latest"
+      },
+      "models": {
+        "openai/codex-mini-latest": {}
+      }
+    }
+  },
+  "gateway": {
+    "mode": "local",
+    "auth": {
+      "mode": "token",
+      "token": "0440ed0a195e8cf20f81b961e500d4b769da3077c9e71bb7"
+    },
+    "port": 18789,
+    "bind": "loopback",
+    "tailscale": {
+      "mode": "off",
+      "resetOnExit": false
+    }
+  },
+  "plugins": {
+    "entries": {
+      "telegram": {
+        "enabled": true
+      }
+    }
+  },
+  "channels": {
+    "telegram": {
+      "enabled": true,
+      "botToken": "8578012833:AAG5jTAEY8yGSy0MPICrTlhtNfMG9qCihFQ"
+    }
+  },
+  "meta": {
+    "lastTouchedVersion": "2026.2.1",
+    "lastTouchedAt": "2026-02-03T06:19:47.816Z"
+  }
+}

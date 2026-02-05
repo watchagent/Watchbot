@@ -1,0 +1,20 @@
+# OpenClaw sensitive data
+openclaw-data/credentials/
+openclaw-data/config/auth-profiles.json
+openclaw-data/.env
+
+# API Keys
+*.key
+*-key.json
+oauth.json
+
+# Logs
+*.log
+openclaw-data/logs/
+
+# Sessions (bisa besar)
+openclaw-data/sessions/
+
+# Temporary files
+*.tmp
+.DS_Store
